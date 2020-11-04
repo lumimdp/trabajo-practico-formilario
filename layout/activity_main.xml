@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/nombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:inputType="text"
+            android:paddingLeft="@dimen/margen_input"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/titulo_input" />
+
+     <EditText
+        android:id="@+id/fechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:paddingLeft="@dimen/margen_input"
+        android:clickable="true" />
+
+
+       <EditText
+          android:id="@+id/nroTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/margen_input"/>
+
+        <EditText
+            android:id="@+id/eMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/margen_input"/>
+
+    <EditText
+        android:id="@+id/textoDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Descripcion"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:onClick="sendMessage"
+        android:shadowRadius="30"
+        android:text="Siguiente"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_200" />
+
+
+</LinearLayout>
